@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<p>
+<%= @post.name %>
   <h3>Name:</h3>
   <%= @post.name %>
   <h3>Content:</h3>
@@ -11,7 +11,7 @@
     <li><%= tag.name %></li>
     <% end %>
   </ul>
-</p>
+
 
 
 <%= link_to 'Edit', edit_post_path(@post) %> |
